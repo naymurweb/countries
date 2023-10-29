@@ -2,7 +2,6 @@
 const VisitCountre = ({countrie}) => {
     const { flags,name } = countrie;
 
-
     return (
         <div className="card  bg-base-100 shadow-xl flex-row p-5">
         <figure className="px-10 pt-10">

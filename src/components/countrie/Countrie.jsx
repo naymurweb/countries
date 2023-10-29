@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Countrie = ({ countrie, handleVisit, visitItem }) => {
+const Countrie = ({ countrie, handleVisit }) => {
   const { flags, name } = countrie;
   const [visit, setVisit] = useState(false);
 
@@ -8,7 +8,6 @@ const Countrie = ({ countrie, handleVisit, visitItem }) => {
     setVisit(!visit);
   };
 
-  console.log(visit);
 
   return (
     <div className={`card bg-base-100 shadow-xl ${visit && "bg-sky-200"}`}>

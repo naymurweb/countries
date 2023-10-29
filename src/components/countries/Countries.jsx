@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Countrie from "../countrie/Countrie";
 import VisitCountre from "../visitCountre/VisitCountre";
+import { addToLs } from "../../hook/localStorage";
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -15,6 +16,7 @@ const Countries = () => {
 
   const handleVisit = (counries) => {
     setVisit([...visit, counries]);
+    addToLs(counries.cca3);
   };
   return (
     <div className="container mx-auto">
